@@ -676,7 +676,7 @@ export default function Home({ onRegister }) {
 
                   <Report label="Random Facts" value="84%" />
 
-                  <Report label="Actually..." value="∞" />
+                  <Report label="Actually..." value="0" />
                 </div>
 
                 <div
