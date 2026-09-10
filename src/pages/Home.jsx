@@ -171,8 +171,8 @@ export default function Home({ onRegister }) {
               <br />
               <span
                 className="
-                text-pink-500
-              "
+                  text-pink-500
+                "
               >
                 MEMORYLOST
               </span>
@@ -247,10 +247,10 @@ export default function Home({ onRegister }) {
             >
               <div
                 className="
-                flex
-                items-start
-                gap-3
-              "
+                  flex
+                  items-start
+                  gap-3
+                "
               >
                 <GraduationCap
                   size={28}
@@ -263,26 +263,34 @@ export default function Home({ onRegister }) {
                 <div>
                   <p
                     className="
-                    text-lg
-                    font-black
-                    sm:text-xl
-                  "
+                      text-lg
+                      font-black
+                      sm:text-xl
+                    "
                   >
                     🎓 EDUCATION IS NOT IMPORTANT IN UNIVERSITY.
                   </p>
 
                   <p
                     className="
-                    mt-2
-                    text-sm
-                    font-bold
-                    text-gray-700
-                    sm:text-base
-                  "
+                      mt-2
+                      text-sm
+                      font-bold
+                      text-gray-700
+                      sm:text-base
+                    "
                   >
                     Some people may agree on it.
                     <br />
                     That's completely fine. 😂
+                    <br />
+                    <span
+                      className="
+                      text-pink-600
+                    "
+                    >
+                      The fact is : They're still studying in our university. 😂
+                    </span>
                   </p>
                 </div>
               </div>
@@ -328,17 +336,17 @@ export default function Home({ onRegister }) {
 
             <div
               className="
-              mx-auto
-              mt-6
-              max-w-md
-              space-y-2
-              text-left
-              text-sm
-              font-bold
-              text-gray-700
-              sm:text-base
-              lg:mx-0
-            "
+                mx-auto
+                mt-6
+                max-w-md
+                space-y-2
+                text-left
+                text-sm
+                font-bold
+                text-gray-700
+                sm:text-base
+                lg:mx-0
+              "
             >
               <p>🧠 Got questionable opinions?</p>
 
@@ -348,7 +356,8 @@ export default function Home({ onRegister }) {
             </div>
 
             {/* ==================================================
-                JOIN BUTTON — IMMEDIATELY VISIBLE
+                JOIN BUTTON
+                VISIBLE WITHOUT SCROLLING
             ================================================== */}
 
             <motion.button
@@ -392,12 +401,12 @@ export default function Home({ onRegister }) {
 
             <p
               className="
-              mt-3
-              text-[11px]
-              font-bold
-              text-gray-500
-              sm:text-xs
-            "
+                mt-3
+                text-[11px]
+                font-bold
+                text-gray-500
+                sm:text-xs
+              "
             >
               No experience required. Confidence preferred. 😂
             </p>
@@ -409,19 +418,19 @@ export default function Home({ onRegister }) {
 
           <div
             className="
-            flex
-            justify-center
-            px-4
-            sm:px-8
-            lg:px-0
-          "
+              flex
+              justify-center
+              px-4
+              sm:px-8
+              lg:px-0
+            "
           >
             <div
               className="
-              relative
-              w-full
-              max-w-md
-            "
+                relative
+                w-full
+                max-w-md
+              "
             >
               {/* OPINION BADGE */}
 
@@ -541,23 +550,23 @@ export default function Home({ onRegister }) {
                 {/* CERTIFIED */}
                 <div
                   className="
-                  absolute
-                  left-1/2
-                  top-1/2
-                  mt-20
-                  -translate-x-1/2
-                  whitespace-nowrap
-                  rounded-full
-                  border-[3px]
-                  border-black
-                  bg-white
-                  px-3
-                  py-1
-                  text-[9px]
-                  font-black
-                  sm:mt-24
-                  sm:text-xs
-                "
+                    absolute
+                    left-1/2
+                    top-1/2
+                    mt-20
+                    -translate-x-1/2
+                    whitespace-nowrap
+                    rounded-full
+                    border-[3px]
+                    border-black
+                    bg-white
+                    px-3
+                    py-1
+                    text-[9px]
+                    font-black
+                    sm:mt-24
+                    sm:text-xs
+                  "
                 >
                   🧠 CERTIFIED OPINION
                 </div>
@@ -632,19 +641,19 @@ export default function Home({ onRegister }) {
               >
                 <div
                   className="
-                  flex
-                  items-center
-                  justify-between
-                  border-b-2
-                  border-black
-                  pb-3
-                "
+                    flex
+                    items-center
+                    justify-between
+                    border-b-2
+                    border-black
+                    pb-3
+                  "
                 >
                   <span
                     className="
-                    text-xs
-                    font-black
-                  "
+                      text-xs
+                      font-black
+                    "
                   >
                     📋 MEMORYLOST REPORT
                   </span>
@@ -654,12 +663,12 @@ export default function Home({ onRegister }) {
 
                 <div
                   className="
-                  mt-4
-                  grid
-                  grid-cols-2
-                  gap-3
-                  text-center
-                "
+                    mt-4
+                    grid
+                    grid-cols-2
+                    gap-3
+                    text-center
+                  "
                 >
                   <Report label="Confidence" value="97%" />
 
@@ -672,16 +681,16 @@ export default function Home({ onRegister }) {
 
                 <div
                   className="
-                  mt-4
-                  rounded-xl
-                  border-2
-                  border-black
-                  bg-yellow-300
-                  p-2
-                  text-center
-                  text-xs
-                  font-black
-                "
+                    mt-4
+                    rounded-xl
+                    border-2
+                    border-black
+                    bg-yellow-300
+                    p-2
+                    text-center
+                    text-xs
+                    font-black
+                  "
                 >
                   ⚔️ DEBATE READY
                 </div>
@@ -696,11 +705,11 @@ export default function Home({ onRegister }) {
 
         <div
           className="
-          mt-16
-          grid
-          gap-4
-          sm:grid-cols-3
-        "
+            mt-16
+            grid
+            gap-4
+            sm:grid-cols-3
+          "
         >
           <Feature
             icon={<Brain size={28} />}
@@ -727,13 +736,13 @@ export default function Home({ onRegister }) {
 
         <div
           className="
-          mt-10
-          text-center
-          text-xs
-          font-bold
-          text-gray-500
-          sm:text-sm
-        "
+            mt-10
+            text-center
+            text-xs
+            font-bold
+            text-gray-500
+            sm:text-sm
+          "
         >
           <Flame
             className="
@@ -770,10 +779,10 @@ function Feature({ icon, title, text }) {
     >
       <div
         className="
-        flex
-        items-center
-        justify-between
-      "
+          flex
+          items-center
+          justify-between
+        "
       >
         {icon}
 
@@ -788,23 +797,23 @@ function Feature({ icon, title, text }) {
 
       <h2
         className="
-        mt-3
-        font-funny
-        text-2xl
-        font-black
-      "
+          mt-3
+          font-funny
+          text-2xl
+          font-black
+        "
       >
         {title}
       </h2>
 
       <p
         className="
-        mt-1
-        text-sm
-        font-semibold
-        leading-relaxed
-        text-gray-600
-      "
+          mt-1
+          text-sm
+          font-semibold
+          leading-relaxed
+          text-gray-600
+        "
       >
         {text}
       </p>
@@ -820,27 +829,27 @@ function Report({ label, value }) {
   return (
     <div
       className="
-      rounded-xl
-      border-2
-      border-black
-      p-2
-    "
+        rounded-xl
+        border-2
+        border-black
+        p-2
+      "
     >
       <p
         className="
-        text-[10px]
-        font-bold
-        text-gray-500
-      "
+          text-[10px]
+          font-bold
+          text-gray-500
+        "
       >
         {label}
       </p>
 
       <p
         className="
-        mt-1
-        font-black
-      "
+          mt-1
+          font-black
+        "
       >
         {value}
       </p>
