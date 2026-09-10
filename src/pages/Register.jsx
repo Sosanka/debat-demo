@@ -1,9 +1,7 @@
 import { useState } from "react";
 
 import RegistrationForm from "../components/registration/RegistrationForm";
-
 import AlreadyRegistered from "../components/registration/AlreadyRegistered";
-
 import RegistrationSuccess from "../components/registration/RegistrationSuccess";
 
 export default function Register() {
@@ -15,14 +13,14 @@ export default function Register() {
     return (
       <main
         className="
-        funny-grid
-        min-h-screen
-        bg-orange-50
-        px-5
-        py-12
-        sm:px-8
-        lg:py-20
-      "
+          funny-grid
+          min-h-screen
+          bg-orange-50
+          px-5
+          py-12
+          sm:px-8
+          lg:py-20
+        "
       >
         <AlreadyRegistered
           candidate={candidate}
@@ -36,16 +34,19 @@ export default function Register() {
     return (
       <main
         className="
-        funny-grid
-        min-h-screen
-        bg-orange-50
-        px-5
-        py-12
-        sm:px-8
-        lg:py-20
-      "
+          funny-grid
+          min-h-screen
+          bg-orange-50
+          px-5
+          py-12
+          sm:px-8
+          lg:py-20
+        "
       >
-        <RegistrationSuccess candidate={candidate} />
+        <RegistrationSuccess
+          candidate={candidate}
+          onBack={() => setStatus("form")}
+        />
       </main>
     );
   }
@@ -53,30 +54,28 @@ export default function Register() {
   return (
     <main
       className="
-      funny-grid
-      min-h-screen
-      bg-orange-50
-      px-5
-      py-10
-      sm:px-8
-      lg:py-16
-    "
+        funny-grid
+        min-h-screen
+        bg-orange-50
+        px-5
+        py-10
+        sm:px-8
+        lg:py-16
+      "
     >
       <div
         className="
-        mx-auto
-        max-w-6xl
-      "
+          mx-auto
+          max-w-6xl
+        "
       >
         <RegistrationForm
           onSuccess={(data) => {
             setCandidate(data);
-
             setStatus("success");
           }}
           onAlreadyRegistered={(data) => {
             setCandidate(data);
-
             setStatus("already_registered");
           }}
         />

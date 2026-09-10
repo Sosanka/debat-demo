@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { CheckCircle, Trophy } from "lucide-react";
+import { CheckCircle, Trophy, ArrowLeft } from "lucide-react";
 
-export default function RegistrationSuccess({ candidate }) {
+export default function RegistrationSuccess({ candidate, onBack }) {
   return (
     <motion.div
       initial={{
@@ -25,8 +25,8 @@ export default function RegistrationSuccess({ candidate }) {
     >
       <div
         className="
-        text-6xl
-      "
+          text-6xl
+        "
       >
         🎉 🏆 🎉
       </div>
@@ -58,44 +58,44 @@ export default function RegistrationSuccess({ candidate }) {
 
       <h1
         className="
-        mt-4
-        font-funny
-        text-6xl
-        font-black
-      "
+          mt-4
+          font-funny
+          text-6xl
+          font-black
+        "
       >
         YOU'RE IN!
       </h1>
 
       <p
         className="
-        mt-5
-        text-3xl
-        font-black
-      "
+          mt-5
+          text-3xl
+          font-black
+        "
       >
         {candidate.name}
       </p>
 
       <p
         className="
-        mt-2
-        font-bold
-        text-gray-700
-      "
+          mt-2
+          font-bold
+          text-gray-700
+        "
       >
         has officially joined the chaos. ⚔️
       </p>
 
       <div
         className="
-        mt-8
-        rounded-3xl
-        border-4
-        border-black
-        bg-white
-        p-7
-      "
+          mt-8
+          rounded-3xl
+          border-4
+          border-black
+          bg-white
+          p-7
+        "
       >
         <Trophy
           className="
@@ -107,22 +107,22 @@ export default function RegistrationSuccess({ candidate }) {
 
         <p
           className="
-          text-xs
-          font-black
-          uppercase
-          tracking-widest
-        "
+            text-xs
+            font-black
+            uppercase
+            tracking-widest
+          "
         >
           Battle ID
         </p>
 
         <p
           className="
-          mt-3
-          font-mono
-          text-4xl
-          font-black
-        "
+            mt-3
+            font-mono
+            text-4xl
+            font-black
+          "
         >
           {candidate.registrationId}
         </p>
@@ -130,14 +130,14 @@ export default function RegistrationSuccess({ candidate }) {
 
       <div
         className="
-        mt-7
-        rounded-2xl
-        border-4
-        border-black
-        bg-yellow-300
-        p-5
-        font-black
-      "
+          mt-7
+          rounded-2xl
+          border-4
+          border-black
+          bg-yellow-300
+          p-5
+          font-black
+        "
       >
         🎤 Congratulations!
         <br />
@@ -145,8 +145,8 @@ export default function RegistrationSuccess({ candidate }) {
         <br />
         <span
           className="
-          text-2xl
-        "
+            text-2xl
+          "
         >
           "Actually..."
         </span>
@@ -156,13 +156,53 @@ export default function RegistrationSuccess({ candidate }) {
 
       <p
         className="
-        mt-7
-        font-bold
-        text-gray-600
-      "
+          mt-7
+          font-bold
+          text-gray-600
+        "
       >
         ⚔️ Now prepare your arguments.
       </p>
+
+      {/* ========================================================
+          BACK BUTTON
+      ======================================================== */}
+
+      <motion.button
+        whileHover={{
+          scale: 1.02,
+          x: -2,
+        }}
+        whileTap={{
+          scale: 0.97,
+        }}
+        onClick={onBack}
+        className="
+          mt-6
+          flex
+          w-full
+          items-center
+          justify-center
+          gap-2
+          rounded-xl
+          border-4
+          border-black
+          bg-white
+          px-4
+          py-3
+          text-sm
+          font-black
+          shadow-[4px_4px_0px_#000]
+          transition
+          hover:shadow-[2px_2px_0px_#000]
+          active:translate-x-[3px]
+          active:translate-y-[3px]
+          active:shadow-none
+        "
+      >
+        <ArrowLeft size={20} />
+        BACK TO REGISTRATION
+      </motion.button>
     </motion.div>
   );
 }
