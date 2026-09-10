@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+
+:root {
+  font-family: "Space Grotesk", sans-serif;
+  background: #fff7ed;
+  color: #111827;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+button,
+input {
+  font: inherit;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+.font-funny {
+  font-family: "Baloo 2", cursive;
+}
+
+
+.funny-grid {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    );
+
+  background-size: 28px 28px;
+}
+
+
+.paper-card {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0 #000;
+}
+
+
+.paper-card-small {
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0 #000;
+}
+
+
+/* Better mobile behavior */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+::selection {
+  background: #f9a8d4;
+  color: #000;
+}
